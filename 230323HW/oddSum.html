@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function oddSum(a,b) {
+            var sum = 0;
+
+            if(a <= b) {
+                for(a ; a<=b ; a++){
+                    if(a % 2 == 1){
+                        sum = sum + a;
+                    }else {
+                        continue;
+                    }
+                }
+            }
+            else {  
+                for(b ; b<=a ; b++){
+                    if(b % 2 == 1){
+                        sum = sum + b;
+                    }else {
+                        continue;
+                    }
+                }
+            }
+            return sum;
+
+        }
+
+        var num1 = Number(prompt("자연수1"));
+        var num2 = Number(prompt("자연수2"));
+        var sum = oddSum(num1,num2);
+        document.write(num1 + "~" + num2 + "사이의 홀수의 합은" + sum + "입니다.")
+
+    </script>
+</body>
+</html>

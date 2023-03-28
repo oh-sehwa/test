@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let birth = prompt("생일입력(6자리)");
+
+    // document.write(birth[2]); 940608
+
+    // document.write(birth[2] == 0);
+
+    // document.write(birth.substr(3, 1));
+
+    var year = birth.substr(0, 2);
+
+    if (birth[2] == 0) {
+      var month = birth.substr(3, 1)
+    }
+    else {
+      var month = birth.substr(2, 2)
+    };
+
+    // if (month >= 13){
+    //   document.write("입력하신 생일은 올바르지않습니다.")
+    // }
+
+    if (birth[4] == 0) {
+      var day = birth.substr(5, 1)
+    }
+    else {
+      var day = birth.substr(4, 2)
+    };
+
+    if (month <= 12) {
+      if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
+        if (day >= 1 && day <= 31) {
+          document.write("입력하신 생일은 19" + year + "년" + month + "월" + day + "일")
+        }
+        else { document.write("입력하신 생일이 올바르지 않습니다") }
+      } else if (month == 2) {
+        if (day >= 1 && day <= 29) {
+          document.write("입력하신 생일은 19" + year + "년" + month + "월" + day + "일")
+        }
+        else { document.write("입력하신 생일이 올바르지 않습니다") }
+      } else {
+        if (day >= 1 && day <= 30) {
+          document.write("입력하신 생일은 19" + year + "년" + month + "월" + day + "일")
+        }
+        else { document.write("입력하신 생일이 올바르지 않습니다") }
+      }
+    }
+    else { document.write("입력하신 생일이 올바르지 않습니다") }
+
+  </script>
+</body>
+
+</html>

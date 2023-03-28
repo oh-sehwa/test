@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // var now = new Date();
+    // document.write( "현제시간은" + now.toLocaleString());
+
+    // document.write( Date.toLocaleString() );
+
+//     var cho = {
+//         a1:"조", b2:"승", c3:"철"
+//             }
+
+//     var a = new cho();
+//     document.write(a.a1());
+
+//     function Cho() {
+//     this.a1 = "조";
+//     this.b2 = "승";
+//     this.c = "철";
+//   }
+  
+//   var a = new Cho();
+//   document.write(a.a1);
+
+/*
+var nums = [1,2,3];
+var chars = ["a","b","c","d"];
+
+var numsChars = nums.concat(chars);
+var charsNums = chars.concat(nums);
+document.write("nums에 chars 합치면: " , numsChars , "<br> chars에 nums 합치면: " , charsNums);
+*/
+
+let a = [];
+for (i=0 ; i<10 ; i++){
+    c = prompt("리스트에 들어갈 원소를 쓰세요")
+    a.push(c);
+    //  document.write(a + "<br>");
+}
+  document.write(a.sort(),"<br>");
+  document.write((a.sort()).reverse(),"<br>");
+
+  document.write(((a.sort()).reverse()).pop(),",");
+  document.write(((a.sort()).reverse()).pop(),",");
+  document.write(((a.sort()).reverse()).pop());
+ </script>
+</body>
+</html>
