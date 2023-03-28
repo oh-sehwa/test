@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    //     a=10
+    // b=15
+    // a<b && a!==b || a>=b || a<=b && a==b
+
+    // var a = prompt("숫자 10이하면 ++, 그렇지 않으면 --");
+    // num = parseInt(a);
+
+    // if(num <= 10){
+    //   alert(num++);
+    // }
+    // else{
+    //   confirm(num = num -1);
+    // } 
+
+    // var a = prompt("현재 위치를 입력하세요");
+    // var b = prompt("구로역은 봤나요","y/n");
+
+    // if (a == "구로" || a == "구로구" || a == "디지털센터"){
+    //   if(b == "y" || b == "Y" || b == "yes"){
+    //     document.write("보셨군요 :)");
+    //   }
+    //   else{
+    //     document.write("못보셨군요 :( 구로가 맞는지 모르겠어요");
+    //   }
+    // }
+    // else{
+    //   document.write("구로부터 가세요");
+    // }
+
+    var c = prompt("통신사 번호(010-1234-5647)", "(010)");
+    var d = prompt("전화번호 가운데 번호", "1234");
+    var e = prompt("전화번호 끝번호", "5647");
+
+    if (c == "010") {
+      document.write("통신사는 맞아요?");
+    }
+    else if (d == "1234") {
+      document.write("2번째자리가 맞아요?");
+    }
+    else if (e == "5647") {
+      document.write("3번째자리가 맞아요?");
+    }
+    else{ 
+      document.write("전화번호가 틀려요?");
+    }
+
+    // var a = prompt("그만2, 계속1")
+    // while(a == 1){
+    //   document.write("무한 반복 구간"+"<br>")
+    //   var a = prompt("그만2, 계속1")
+    // }
+    // document.write("끝")
+
+
+
+        // var session = prompt("관심세션", "1, 2, 3");
+    
+        // switch (session) {
+        //   case "1": document.write("201호")
+        //     break;
+        //   case "2": document.write("203호")
+        //     break;
+        //   case "3": document.write("205호")
+        //     break;
+        //   default: alert("다시입력해주세요");
+    
+        // }
+/*    
+    var j = prompt("몇단을 출력할까요", "1 ~ 9");
+    
+    for (var i = 0; i <=9; i ++) {
+     document.write(j+"x"+i+"="+j*i+"<br>")
+    }
+    */
+  </script>
+</body>
+
+</html>
