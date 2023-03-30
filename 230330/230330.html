@@ -61,10 +61,10 @@
         <fieldset>
             <legend>상품선택</legend>
             <p><b>주문할 상품을 선택해 주세요.</b></p>
-            <label><input type="checkbox" value="s_3">선물용 3kg</label>
-            <label><input type="checkbox" value="s_5">선물용 5kg</label>
-            <label><input type="checkbox" value="f_3">가정용 3kg</label>
-            <label><input type="checkbox" value="f_5">가정용 3kg</label>
+            <label><input type="checkbox" id="s_3" value="s_3">선물용 3kg</label>
+            <label><input type="checkbox" id="s_5" value="s_5">선물용 5kg</label>
+            <label><input type="checkbox" id="f_3" value="f_3">가정용 3kg</label>
+            <label><input type="checkbox" id="f_5" value="f_5">가정용 3kg</label>
             <p><b>포장선택</b></p>
             <label><input type="radio" value="gift" value="yes">선물포장</label>
             <label><input type="radio" value="gift" value="no">선물포장안함</label>
@@ -87,7 +87,7 @@
             <input type="date" id="date" name="date"> <small>주문일로부터 최소 3일 이후</small><br>
 
             <label for="prod">주문상품</label>
-            <input id="prod" name="prod" value="선물용 3kg" read only><br>
+            <input id="prod" name="prod" value="가정용 3kg" read only><br>
 
             <label for="memo">메모　　</label>
             <textarea id="memo" col="40" rows="4"></textarea>
