@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="230330.css">
+
+    <script src="230330.js"></script>
+
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>용도</th>
+            <th>중량</th>
+            <th>개수</th>
+            <th>가격</th>
+        </tr>
+        <tr>
+            <td rowspan="2">선물용</td>
+            <td>3kg</td>
+            <td>11~16과</td>
+            <td>35,000원</td>
+        </tr>
+        <tr>
+
+            <td>5kg</td>
+            <td>18~26과</td>
+            <td>52,000원</td>
+        </tr>
+        <tr>
+            <td rowspan="2">가정용</td>
+            <td>3kg</td>
+            <td>11~16과</td>
+            <td>30,000원</td>
+        </tr>
+        <tr>
+
+            <td>5kg</td>
+            <td>18~26과</td>
+            <td>47,000원</td>
+        </tr>
+    </table>
+    <h1 class="title">Vespa & W800</h1>
+    <div class="ratio ratio-21x9">
+        <img src="https://www.twostrokesmoke.com/registry/pictures/85803/2009_Vespa_GTV_250_60th_Anniversary_Siena_Ivory_Heather_Milne_001.jpg"
+            width=450px height=450px>
+        <img src="https://i0.wp.com/www.asphaltandrubber.com/wp-content/uploads/2016/06/Kawasaki-W800-Final-Edition-02.jpg?fit=1619%2C1080&ssl=1"
+            width=450px height=450px>
+    </div>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.6151828517745!2d126.89942262695314!3d37.51699329999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9f8d40fb2f7b%3A0x880136308e38a311!2z7YOA7J6E7Iqk7YCY7Ja0!5e0!3m2!1sko!2skr!4v1680144832637!5m2!1sko!2skr"
+        width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <form action="http://www.naver.com">
+        <fieldset>
+            <legend>상품선택</legend>
+            <p><b>주문할 상품을 선택해 주세요.</b></p>
+            <label><input type="checkbox" value="s_3">선물용 3kg</label>
+            <label><input type="checkbox" value="s_5">선물용 5kg</label>
+            <label><input type="checkbox" value="f_3">가정용 3kg</label>
+            <label><input type="checkbox" value="f_5">가정용 3kg</label>
+            <p><b>포장선택</b></p>
+            <label><input type="radio" value="gift" value="yes">선물포장</label>
+            <label><input type="radio" value="gift" value="no">선물포장안함</label>
+        </fieldset>
+        <fieldset>
+            <legend>정보입력</legend>
+            <label for="name">이름　　</label>
+            <input id="name" name="name"><br>
+
+            <label for="address">배송주소</label>
+            <input id="address" name="address" required><br>
+
+            <label for="email">이메일　</label>
+            <input id="email" name="email"><br>
+
+            <label for="tel">연락처　</label>
+            <input id="tel" name="tel" placeholder="하이픈 빼고 입력해주세요"><br>
+
+            <label for="date">배송지정</label>
+            <input type="date" id="date" name="date"> <small>주문일로부터 최소 3일 이후</small><br>
+
+            <label for="prod">주문상품</label>
+            <input id="prod" name="prod" value="선물용 3kg" read only><br>
+
+            <label for="memo">메모　　</label>
+            <textarea id="memo" col="40" rows="4"></textarea>
+        </fieldset>
+        <input type="submit" value="주문하기">
+        <input type="reset" onclick="Click()" value="취소하기">
+    </form>
+</body>
+
+</html>
